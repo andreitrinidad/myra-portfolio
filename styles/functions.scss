@@ -1,0 +1,38 @@
+@use "sass:math";
+
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
+
+@function font() {
+  @return var(--font);
+}
+
+@function dynamicFont($font-size-px) {
+  $vwSize: $font-size-px * 0.015;
+
+  @debug "The vw is #{$vwSize}";
+  @return calc(#{$vwSize}vw + #{$vwSize}vh + 2vmin);
+}
+
+@function toPercent($target, $parent: 16) {
+  @return percentage($target / $parent);
+}
+
+@mixin text-500 {
+  font-family: font();
+  font-weight: 500;
+}
+
+@mixin text-400 {
+  font-family: font();
+  font-weight: 400;
+}
+
+@mixin tablet {
+  @media (max-width: 1023px) { @content; }
+}
+
+@mixin mobile {
+  @media (max-width: 620px) { @content; }
+}

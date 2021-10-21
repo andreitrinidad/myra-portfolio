@@ -45,6 +45,12 @@ main {
 
     z-index: -2;
   }
+
+  @include mobile {
+    div:nth-child(1) {
+      display: none;
+    }
+  }
 }
 
 

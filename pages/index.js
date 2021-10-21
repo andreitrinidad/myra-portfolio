@@ -145,6 +145,7 @@ export default function Home() {
          <p>FOR MORE SAMPLE WORKS, PLEASE CHECK MY BEHANCE & INSTAGRAM PROFILE AT</p>
          <p>behance.net/myraisidro_designs</p>
          <p>Instagram.com/typo.designs_</p>
+         <span>a site by <a href="github.com/andreitrinidad">andreitrinidad</a></span>
         </section>
       </main>
       

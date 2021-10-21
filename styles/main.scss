@@ -148,6 +148,10 @@ main {
     margin-top: 70px;
     letter-spacing: 0.12em;
     font-size: 23px;
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }
 
@@ -214,6 +218,16 @@ main {
         font-size: 24px;
       }
     }
+
+    @include mobile {
+      padding: 20px;
+      h2 {
+        font-size: 40px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
   }
 
   // Muka ni Myra
@@ -251,6 +265,11 @@ main {
       margin: 0;
       font-size: 24px;
     }
+
+    @include mobile {
+      padding: 20px;
+      font-size: 16px;
+    }
   }
 
   &-d {
@@ -264,6 +283,11 @@ main {
     @include tablet {
       font-size: 24px;
       padding: 40px;
+    }
+
+    @include mobile {
+      padding: 20px;
+      font-size: 16px;
     }
   }
 
@@ -356,6 +380,11 @@ main {
   a {
     text-align: center;
   }
+
+  @include mobile {
+    font-size: 13px;
+    padding: 20px;
+  }
 }
 
 .thankyou {
@@ -384,6 +413,15 @@ main {
   @include tablet {
     p {
       font-size: 24px;
+    }
+  }
+
+  @include mobile {
+    h1 {
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 

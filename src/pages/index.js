@@ -8,6 +8,7 @@ import { Homepage } from '../sections/Homepage';
 import { About } from '../sections/About';
 import { FadeInLeft, FadeInRight, FadeToBottom, FadeToTop } from '../global/animations';
 import { ThankYou } from '../sections/ThankYou';
+import Cursor from '../components/Cursor';
 const data = [
   {
     uid: 'area-hifi',
@@ -102,7 +103,7 @@ export default function Home() {
         <BgStripe bgColor={activeProject.bgColor} stripeColor="#ffffff33" fixed />
         <ThankYou/>
       </main>
-
+      <Cursor/>
     </div>
   )
 }

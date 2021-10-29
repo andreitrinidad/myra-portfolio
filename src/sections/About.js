@@ -13,9 +13,9 @@ export const About = () => {
         <FadeInLeft delay="0">
         <div className="about-a">
           <h2>Myra Isidro</h2>
-          <h4>myraisidro4@gmail.com</h4>
-          <h4>+63 927 2577 989</h4>
-          <h4>linkedin.com/in/myraisidro/</h4>
+          <h4><a href="mailto://myraisidro4@gmail.com" target="_blank">myraisidro4@gmail.com</a></h4>
+          <h4><a href="tel://+63 927 2577 989" target="_blank">+63 927 2577 989</a></h4>
+          <h4><a href="linkedin.com/in/myraisidro/" target="_blank">linkedin.com/in/myraisidro/</a></h4>
         </div>
         </FadeInLeft>
         <FadeInRight delay="0.1">
@@ -32,8 +32,8 @@ export const About = () => {
 
         <div className="about-c">
           <ul>
-            <li>behance.net/myraisidro_designs</li>
-            <li>Instagram.com/typo.designs_</li>
+            <li><a href="behance.net/myraisidro_designs" target="_blank">behance.net/myraisidro_designs</a></li>
+            <li><a href="Instagram.com/typo.designs_" target="_blank">Instagram.com/typo.designs_</a></li>
           </ul>
         </div>
         </FadeInLeft>
